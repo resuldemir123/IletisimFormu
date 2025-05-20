@@ -1,0 +1,86 @@
+@{
+    ViewData["Title"] = "Hakkında";
+}
+<!-- Hero Section with Fade-In Animation -->
+<div class="container-fluid bg-light py-5 text-center fade-in" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+    <div class="container">
+        <h1 class="display-4 mb-3" style="color: #dc3545;">Hakkımızda</h1>
+        <p class="lead text-muted">
+            Argeya olarak, yenilikçi yazılım çözümleriyle işletmelerin dijital dönüşüm yolculuğunu hızlandırıyoruz.
+        </p>
+        <a href="@Url.Action("Index", "Contact")" class="btn btn-primary mt-3 animate-pulse">Bize Ulaşın</a>
+    </div>
+</div>
+
+<!-- Mission and Vision Section with Slide-In Animation -->
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-6 mb-4 slide-in-left">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <i class="fas fa-bullseye fa-3x mb-3" style="color: #dc3545;"></i>
+                    <h3 class="card-title">Misyonumuz</h3>
+                    <p class="card-text text-muted">
+                        Müşterilerimize para kazandıran yazılımlar sunarak, onların iş süreçlerini optimize etmek ve sürdürülebilir büyüme sağlamak.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4 slide-in-right">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <i class="fas fa-eye fa-3x mb-3" style="color: #dc3545;"></i>
+                    <h3 class="card-title">Vizyonumuz</h3>
+                    <p class="card-text text-muted">
+                        Teknolojiyi kullanarak global çapta tanınan, yenilikçi ve güvenilir bir yazılım şirketi olmak.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Section with Fade-In and Hover Animation -->
+<div class="container-fluid py-5 fade-in" style="background-color: #f1f3f5;">
+    <div class="container">
+        <h2 class="text-center mb-5">Ekibimiz</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm animate-bounce">
+                    <div class="card-body">
+                        <i class="fas fa-user-tie fa-2x mb-3" style="color: #dc3545;"></i>
+                        <h5 class="card-title">Uzman Geliştiriciler</h5>
+                        <p class="card-text text-muted">Yazılım sektöründe deneyimli ekibimiz, projelerinizi hayata geçiriyor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm animate-bounce">
+                    <div class="card-body">
+                        <i class="fas fa-lightbulb fa-2x mb-3" style="color: #dc3545;"></i>
+                        <h5 class="card-title">Yenilikçi Düşünce</h5>
+                        <p class="card-text text-muted">Her zaman en yeni teknolojileri takip ederek çözümler üretiyoruz.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm animate-bounce">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-2x mb-3" style="color: #dc3545;"></i>
+                        <h5 class="card-title">Müşteri Odaklılık</h5>
+                        <p class="card-text text-muted">Müşterilerimizin ihtiyaçlarına özel çözümler sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action with Fade-In Animation -->
+<div class="container py-5 text-center fade-in">
+    <h3 class="mb-4">Birlikte Çalışalım!</h3>
+    <p class="text-muted mb-4">
+        Projeleriniz için en iyi yazılım çözümlerini sunmaya hazırız. Hemen iletişime geçin.
+    </p>
+    <a href="@Url.Action("Index", "Contact")" class="btn btn-primary btn-lg animate-pulse">İletişim Kurun</a>
+</div>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ContactFormApp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Navbar with Fade-In Animation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fade-in">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <span style="color: #dc3545; font-weight: bold;">Argeya</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Privacy", "Home")">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("About", "Home")">Hakkında</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content with Fade-In Animation -->
+    <div class="container main-content fade-in">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer with Slide-Up Animation -->
+    <footer class="bg-dark text-white text-center text-lg-start mt-5 slide-up">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Argeya</h5>
+                    <p>
+                        Yenilikçi çözümlerle geleceği şekillendiriyoruz. Sizinle çalışmaktan mutluluk duyarız!
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">İletişim Bilgileri</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</li>
+                        <li><i class="fas fa-phone"></i> +90 212 123 45 67</li>
+                        <li><i class="fas fa-envelope"></i> info@argeya.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Hızlı Erişim</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="@Url.Action("Privacy", "Home")" class="text-white">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: #343a40;">
+            © 2025 Argeya | Tüm hakları saklıdır | Tasarım: <a href="#" class="text-white" style="text-decoration: none;">Argeya Ekibi</a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

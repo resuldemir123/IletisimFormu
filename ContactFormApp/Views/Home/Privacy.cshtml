@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Gizlilik Politikası";
+}
+
+<div class="fade-in text-center py-5 container">
+    <h2 class="mb-4 fw-bold">Gizlilik Politikası</h2>
+    <p class="lead mb-4 text-muted">Kullanıcı gizliliği bizim için son derece önemlidir. Bu sayfada, hangi bilgileri topladığımızı, nasıl kullandığımızı ve bu bilgileri nasıl koruduğumuzu açık bir şekilde bulabilirsiniz.</p>
+
+    <div class="text-start mx-auto shadow-sm p-4 rounded" style="max-width: 800px; background-color: #f9f9f9;">
+        <h4 class="mt-4 text-primary">1. Toplanan Bilgiler</h4>
+        <p>Web sitemizi kullandığınızda, sizden ad, e-posta adresi, IP adresi gibi bazı kişisel bilgiler toplayabiliriz. Bu bilgiler, hizmet kalitesini artırmak ve sizinle daha iyi iletişim kurabilmek amacıyla kullanılır.</p>
+
+        <h4 class="mt-4 text-primary">2. Bilgi Kullanımı</h4>
+        <p>Toplanan bilgiler yalnızca aşağıdaki amaçlar doğrultusunda kullanılır:</p>
+        <ul>
+            <li>Hizmetlerimizi geliştirmek</li>
+            <li>Kullanıcı desteği sağlamak</li>
+            <li>Kişiselleştirilmiş içerik sunmak</li>
+            <li>Güvenlik ve dolandırıcılık önleme</li>
+        </ul>
+
+        <h4 class="mt-4 text-primary">3. Bilgi Paylaşımı</h4>
+        <p>Kişisel verileriniz hiçbir şekilde üçüncü taraflarla paylaşılmaz, satılmaz veya kiralanmaz. Yalnızca yasal zorunluluklar çerçevesinde resmi mercilerle paylaşılabilir.</p>
+
+        <h4 class="mt-4 text-primary">4. Güvenlik</h4>
+        <p>Verilerinizin güvenliği bizim önceliğimizdir. Bu nedenle, bilgilerinizin yetkisiz erişime karşı korunmasını sağlamak için çeşitli teknik ve idari önlemler uygulanmaktadır.</p>
+
+        <h4 class="mt-4 text-primary">5. Çerezler (Cookies)</h4>
+        <p>Sitemiz, kullanıcı deneyimini geliştirmek amacıyla çerezler kullanmaktadır. Çerezleri tarayıcı ayarlarınızdan kontrol edebilir veya devre dışı bırakabilirsiniz.</p>
+
+        <h4 class="mt-4 text-primary">6. Değişiklikler</h4>
+        <p>Gizlilik politikamız zaman zaman güncellenebilir. Güncellemeler bu sayfada yayınlanır ve kullanıcılarımız değişikliklerden haberdar edilir.</p>
+
+        <p class="mt-5">Herhangi bir sorunuz varsa, <a href="@Url.Action("Index", "Contact")" class="text-decoration-none">iletişim sayfamızdan</a> bizimle iletişime geçebilirsiniz.</p>
+    </div>
+
+    <a href="@Url.Action("Index", "Contact")" class="btn btn-primary mt-4 px-4 py-2 shadow-sm" style="font-weight: 600;">
+        İletişim Formuna Dön
+    </a>
+</div>

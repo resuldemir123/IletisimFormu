@@ -1,0 +1,42 @@
+@model List<ContactFormApp.Models.Contact>
+
+@{
+    ViewData["Title"] = "Admin Panel - Gelen Mesajlar";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Gelen Mesajlar</h2>
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Ad</th>
+                <th>Email</th>
+                <th>Telefon</th>
+                <th>Bölüm</th>
+                <th>Mesaj</th>
+                <th>Tarih</th>
+                <th>İşlem</th> <!-- Yeni sütun -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Email</td>
+                    <td>@item.Phone</td>
+                    <td>@item.Department</td>
+                    <td>@item.Message</td>
+                    <td>@item.CreatedAt.ToString("g")</td>
+                    <td>
+                        <form asp-action="Delete" method="post" onsubmit="return confirm('Bu mesajı silmek istediğinizden emin misiniz?');">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
